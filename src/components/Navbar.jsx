@@ -6,10 +6,8 @@ import { RiNotification3Line } from "react-icons/ri";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 
-import Cart from "./Cart";
-import Chat from "./Chat";
-import Notification from "./Notification";
-import UserProfile from "./UserProfile";
+import avatar from "../data/avatar.jpg";
+import { Cart, Chat, Notification, UserProfile } from ".";
 import { useStateContext } from "../contexts/ContextProvider";
 
 const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
@@ -120,7 +118,7 @@ const Navbar = () => {
           >
             <img
               className="rounded-full w-8 h-8"
-              src="https://material-kit-pro-react.devias.io/static/mock-images/avatars/avatar-carson_darrin.png"
+              src={avatar}
               alt="user-profile"
             />
             <p>
